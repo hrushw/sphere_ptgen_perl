@@ -3,3 +3,5 @@
 *.pdf
 *.dat
 *.table
+*.swp
+*.pgf

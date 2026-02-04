@@ -1,11 +1,10 @@
-\documentclass{article}
-\usepackage{pgfplots}
+\input pgfplots.tex
 \pgfplotsset{compat=1.18}
-\begin{document}
+
 Visualizing surface potential on a sphere given by
-\[ V = k \cos 3 \theta \]
-\begin{tikzpicture}
-  \begin{axis}[
+$$ V = k \cos 3 \theta $$
+\tikzpicture
+  \axis[
     unit vector ratio=1 1 1,
     unit rescale keep size=false,
     scale=3,
@@ -15,11 +14,11 @@ Visualizing surface potential on a sphere given by
     point meta=explicit,
     patch table={pts.dat}]
     table [x=x,y=y,z=z,meta=c]{pts.table};
-  \end{axis}
-\end{tikzpicture}
-\newline
-\begin{tikzpicture}
-  \begin{axis}[
+  \endaxis
+\endtikzpicture
+\break
+\tikzpicture
+  \axis[
     unit vector ratio=1 1 1,
     unit rescale keep size=false,
     scale=9,
@@ -30,6 +29,7 @@ Visualizing surface potential on a sphere given by
     point meta=explicit,
     patch table={pts.dat}]
     table [x=x,y=y,z=z,meta=c]{pts.table};
-  \end{axis}
-\end{tikzpicture}
-\end{document}
+  \endaxis
+\endtikzpicture
+
+\bye
