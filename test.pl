@@ -60,8 +60,8 @@ sub printind {
 	}
 }
 
-my $samplesy=20;
-my $samplesx=20;
+my $samplesy=32;
+my $samplesx=32;
 my @points = sphere(1, $samplesy, $samplesx);
 
 printpts @points;
