@@ -78,7 +78,7 @@ sub printind {
 
 my $samplesy=16;
 my $samplesx=16;
-my @points = sphere(1, $samplesy, $samplesx, \&ptmetafun_hemispheres);
+my @points = sphere(1, $samplesy, $samplesx, \&ptmetafun_cos3y);
 
 printpts @points;
 printind ($samplesy, $samplesx);
